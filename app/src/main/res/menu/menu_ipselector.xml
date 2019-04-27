@@ -2,5 +2,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_item_selectip"
-        android:title="Select IP"/>
+        android:title="Select IP" />
 </menu>

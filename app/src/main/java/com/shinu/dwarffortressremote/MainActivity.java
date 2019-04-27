@@ -3,6 +3,8 @@ package com.shinu.dwarffortressremote;
 import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final DatagramSender datagramSender = new DatagramSender();
 
         //getting all the buttons
         Button button_upKey = findViewById(R.id.button_upKey);
@@ -44,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         button_upKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("#UP", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#UP");
                 datagramSender.sendData();
             }
         });
@@ -52,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         button_downKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("#DOWN", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#DOWN");
                 datagramSender.sendData();
             }
         });
@@ -60,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         button_leftKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("#LEFT", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#LEFT");
                 datagramSender.sendData();
             }
         });
@@ -68,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
         button_rightKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("#RIGHT", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#RIGHT");
                 datagramSender.sendData();
             }
         });
@@ -76,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
         button_plusKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("+", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#PLUS");
                 datagramSender.sendData();
             }
         });
@@ -84,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
         button_minusKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("-", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#MINUS");
                 datagramSender.sendData();
             }
         });
@@ -92,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
         button_layerUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender(">", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#GREATER");
                 datagramSender.sendData();
             }
         });
@@ -100,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         button_layerDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("<", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#LESS");
                 datagramSender.sendData();
             }
         });
@@ -108,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
         button_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("#RETURN", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#RETURN");
                 datagramSender.sendData();
             }
         });
@@ -116,7 +129,8 @@ public class MainActivity extends AppCompatActivity {
         button_look.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("k", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("k");
                 datagramSender.sendData();
             }
         });
@@ -124,7 +138,8 @@ public class MainActivity extends AppCompatActivity {
         button_status.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("z", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("z");
                 datagramSender.sendData();
             }
         });
@@ -132,7 +147,8 @@ public class MainActivity extends AppCompatActivity {
         button_designations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatagramSender datagramSender = new DatagramSender("d", global_string_address);
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("d");
                 datagramSender.sendData();
             }
         });
@@ -140,15 +156,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_ipselector, menu);
-        return true;
+        getMenuInflater().inflate(R.menu.menu_ipselector, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.menu_item_selectip) {
-            Dialog dialog = new Dialog(this);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        Log.d("LOG", "ITEM SELECT DETECTION");
+        if(id == R.id.menu_item_selectip) {
+            Log.d("LOG", "ITEM SELECTED");
+            Dialog dialog = new Dialog(MainActivity.this);
             dialog.setContentView(R.layout.layout_ipselector);
             final EditText editText_ipselector_ip = dialog.findViewById(R.id.editText_ipselector_ip);
             Button button_ipselector_setip = dialog.findViewById(R.id.button_ipselector_setip);
@@ -160,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
             });
             dialog.show();
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
+
 }

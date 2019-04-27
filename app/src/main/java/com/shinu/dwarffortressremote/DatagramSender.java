@@ -4,24 +4,40 @@ import android.util.Log;
 
 import java.net.*;
 
-public class DatagramSender {
+public class DatagramSender extends Thread {
     DatagramPacket datagramPacket;
     DatagramSocket datagramSocket;
+    String message = null;
+    String addr = null;
 
-    public DatagramSender(String message, String addr) {
+    public DatagramSender() {
         try {
-            datagramPacket = new DatagramPacket(message.getBytes("utf-8"), message.length(), InetAddress.getByName("192.168.1.12"), 8080);
             datagramSocket = new DatagramSocket();
         } catch (Exception e) {
             Log.d("LOG", e.toString());
         }
     }
 
-    public void sendData() {
-        try {
-            datagramSocket.send(datagramPacket);
-        } catch(Exception e) {
-            Log.d("LOG", e.toString());
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
+
+    public void run() {
+        if (this.message != null && this.addr != null) {
+            try {
+                datagramPacket = new DatagramPacket(message.getBytes(), message.length(), InetAddress.getByName(addr), 8080);
+                datagramSocket.send(datagramPacket);
+            } catch (Exception e) {
+                Log.d("LOG", e.toString());
+            }
         }
+    }
+
+    public void sendData() {
+        this.start();
     }
 }
