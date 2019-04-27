@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP Address" />
+
+        <EditText
+            android:id="@+id/editText_ipselector_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="IP Address"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_ipselector_setip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set IP" />
+</LinearLayout>
