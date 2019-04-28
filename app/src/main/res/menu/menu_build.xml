@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_armorStand"
+        android:title="Armor Stand (a)"/>
+
+    <item
+        android:id="@+id/menu_item_bed"
+        android:title="Bed (b)"/>
+
+    <item
+        android:id="@+id/menu_item_seat"
+        android:title="Seat (c)"/>
+
+    <item
+        android:id="@+id/menu_item_burial"
+        android:title="Burial Receptacle (n)" />
+
+    <item
+        android:id="@+id/menu_item_door"
+        android:title="Door (d)"/>
+
+    <item
+        android:id="@+id/menu_item_floodgate"
+        android:title="Floodgate (x)"/>
+
+    <item
+        android:id="@+id/menu_item_floorHatch"
+        android:title="Floor Hatch (H)"/>
+
+    <item
+        android:id="@+id/menu_item_wallGrate"
+        android:title="Wall Grate (W)"/>
+
+    <item
+        android:id="@+id/menu_item_verticalBars"
+        android:title="Vertical Bars (B)"/>
+
+    <item
+        android:id="@+id/menu_item_floorBars"
+        android:title="Floor Bars (Alt+b)"/>
+
+    <item
+        android:id="@+id/menu_item_cabinet"
+        android:title="Cabinet (f)"/>
+
+    <item
+        android:id="@+id/menu_item_container"
+        android:title="Container (h)"/>
+
+    <item
+        android:id="@+id/menu_item_kennels"
+        android:title="Kennels (k)"/>
+
+    <item
+        android:id="@+id/menu_item_farmPlot"
+        android:title="Farm Plot (p)"/>
+
+    <item
+        android:id="@+id/menu_item_weaponRack"
+        android:title="Weapon Rack (r)"/>
+
+    <item
+        android:id="@+id/menu_item_statue"
+        android:title="Statue (s)"/>
+
+    <item
+        android:id="@+id/menu_item_slab"
+        android:title="Slab (Alt+s)"/>
+
+    <item
+        android:id="@+id/menu_item_table"
+        android:title="Table (t)"/>
+
+    <item
+        android:id="@+id/menu_item_pavedRoad"
+        android:title="Paved Road (o)"/>
+
+    <item
+        android:id="@+id/menu_item_dirtRoad"
+        android:title="Dirt Road (O)"/>
+
+    <item
+        android:id="@+id/menu_item_bridge"
+        android:title="Bridge (g)"/>
+
+    <item
+        android:id="@+id/menu_item_well"
+        android:title="Well (l)"/>
+
+    <item
+        android:id="@+id/menu_item_siegeEngines"
+        android:title="Siege Engines (i)"/>
+
+    <item
+        android:id="@+id/menu_item_workshops"
+        android:title="Workshops (w)"/>
+
+</menu>

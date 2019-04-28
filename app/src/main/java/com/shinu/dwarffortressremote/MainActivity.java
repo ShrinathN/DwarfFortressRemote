@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,25 +26,25 @@ public class MainActivity extends AppCompatActivity {
         final DatagramSender datagramSender = new DatagramSender();
 
         //getting all the buttons
-        Button button_upKey = findViewById(R.id.button_upKey);
-        Button button_downKey = findViewById(R.id.button_downKey);
-        Button button_leftKey = findViewById(R.id.button_leftKey);
-        Button button_rightKey = findViewById(R.id.button_rightKey);
+        final Button button_upKey = findViewById(R.id.button_upKey);
+        final Button button_downKey = findViewById(R.id.button_downKey);
+        final Button button_leftKey = findViewById(R.id.button_leftKey);
+        final Button button_rightKey = findViewById(R.id.button_rightKey);
 
-        Button button_plusKey = findViewById(R.id.button_plusKey);
-        Button button_minusKey = findViewById(R.id.button_minusKey);
+        final Button button_plusKey = findViewById(R.id.button_plusKey);
+        final Button button_minusKey = findViewById(R.id.button_minusKey);
 
-        Button button_layerUp = findViewById(R.id.button_layerUp);
-        Button button_layerDown = findViewById(R.id.button_layerDown);
+        final Button button_layerUp = findViewById(R.id.button_layerUp);
+        final Button button_layerDown = findViewById(R.id.button_layerDown);
 
-        Button button_enter = findViewById(R.id.button_enter);
+        final Button button_enter = findViewById(R.id.button_enter);
 
-        Button button_look = findViewById(R.id.button_look);
-        Button button_status = findViewById(R.id.button_status);
-        Button button_designations = findViewById(R.id.button_designations);
-        Button button_build = findViewById(R.id.button_build);
-        Button button_units = findViewById(R.id.button_units);
-        Button button_buildings = findViewById(R.id.button_buildings);
+        final Button button_look = findViewById(R.id.button_look);
+        final Button button_status = findViewById(R.id.button_status);
+        final Button button_designations = findViewById(R.id.button_designations);
+        final Button button_build = findViewById(R.id.button_build);
+        final Button button_units = findViewById(R.id.button_units);
+        final Button button_buildings = findViewById(R.id.button_buildings);
 
         button_upKey.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,6 +151,27 @@ public class MainActivity extends AppCompatActivity {
                 datagramSender.setAddr(global_string_address);
                 datagramSender.setMessage("d");
                 datagramSender.sendData();
+            }
+        });
+
+        button_build.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(MainActivity.this, button_build);
+                popupMenu.getMenuInflater().inflate(R.menu.menu_build, popupMenu.getMenu());
+
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        int id = item.getItemId();
+                        if(id == R.id.menu_item_armorStand) {
+
+                        }
+                        return false;
+                    }
+                });
+
+                popupMenu.show();
             }
         });
     }
