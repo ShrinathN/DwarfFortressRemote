@@ -135,4 +135,31 @@
         android:layout_toRightOf="@id/button_units"
         android:text="BUILDING\n(q)" />
 
+    <Button
+        android:id="@+id/button_spaceKey"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/button_minusKey"
+        android:layout_marginTop="40dp"
+        android:text="Space" />
+
+    <Button
+        android:id="@+id/button_escapeKey"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/button_layerDown"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:text="Escape" />
+
+    <Button
+        android:id="@+id/button_resetViewKey"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/button_enter"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/button_spaceKey"
+        android:text="Reset View (F1)" />
+
 </RelativeLayout>

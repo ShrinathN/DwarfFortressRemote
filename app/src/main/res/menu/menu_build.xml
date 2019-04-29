@@ -33,6 +33,10 @@
         android:title="Wall Grate (W)"/>
 
     <item
+        android:id="@+id/menu_item_floorGrate"
+        android:title="Floor Grate (G)"/>
+
+    <item
         android:id="@+id/menu_item_verticalBars"
         android:title="Vertical Bars (B)"/>
 
@@ -95,5 +99,77 @@
     <item
         android:id="@+id/menu_item_workshops"
         android:title="Workshops (w)"/>
+
+    <item
+        android:id="@+id/menu_item_furnaces"
+        android:title="Furnaces (e)"/>
+
+    <item
+        android:id="@+id/menu_item_glassWindow"
+        android:title="Glass Window (y)"/>
+
+    <item
+        android:id="@+id/menu_item_gemWindow"
+        android:title="Gem Window (Y)"/>
+
+    <item
+        android:id="@+id/menu_item_wall"
+        android:title="Wall (C)"/>
+
+    <item
+        android:id="@+id/menu_item_tradeDepot"
+        android:title="Trade Depot (D)"/>
+
+    <item
+        android:id="@+id/menu_item_traps"
+        android:title="Traps (T)"/>
+
+    <item
+        android:id="@+id/menu_item_machineComponents"
+        android:title="Machine Components (M)"/>
+
+    <item
+        android:id="@+id/menu_item_instrument"
+        android:title="Instrument (I)"/>
+
+    <item
+        android:id="@+id/menu_item_support"
+        android:title="Support (S)"/>
+
+    <item
+        android:id="@+id/menu_item_animalTrap"
+        android:title="Animal Trap (m)"/>
+
+    <item
+        android:id="@+id/menu_item_restraint"
+        android:title="Restraint (v)"/>
+
+    <item
+        android:id="@+id/menu_item_cage"
+        android:title="Cage (j)"/>
+
+    <item
+        android:id="@+id/menu_item_archeryTarget"
+        android:title="Archery Target (A)"/>
+
+    <item
+        android:id="@+id/menu_item_tractionBench"
+        android:title="Traction Bench (R)"/>
+
+    <item
+        android:id="@+id/menu_item_nestBox"
+        android:title="Nest Box (N)"/>
+
+    <item
+        android:id="@+id/menu_item_hive"
+        android:title="Hive (Alt+h)"/>
+
+    <item
+        android:id="@+id/menu_item_bookcase"
+        android:title="Bookcase (Alt+c)"/>
+
+    <item
+        android:id="@+id/menu_item_displayFurniture"
+        android:title="Display Furniture (F)"/>
 
 </menu>

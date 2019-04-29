@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
         final Button button_enter = findViewById(R.id.button_enter);
 
+        final Button button_spaceKey = findViewById(R.id.button_spaceKey);
+        final Button button_escapeKey = findViewById(R.id.button_escapeKey);
+        final Button button_resetViewKey = findViewById(R.id.button_resetViewKey);
+
         final Button button_look = findViewById(R.id.button_look);
         final Button button_status = findViewById(R.id.button_status);
         final Button button_designations = findViewById(R.id.button_designations);
@@ -154,27 +158,134 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button_spaceKey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#SPACE");
+                datagramSender.sendData();
+            }
+        });
+
+        button_escapeKey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#ESCAPE");
+                datagramSender.sendData();
+            }
+        });
+
+        button_resetViewKey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datagramSender.setAddr(global_string_address);
+                datagramSender.setMessage("#F1");
+                datagramSender.sendData();
+            }
+        });
+
+        //==============BUILD BUTTON SECTION==============
         button_build.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(MainActivity.this, button_build);
+                final PopupMenu popupMenu = new PopupMenu(MainActivity.this, button_build);
                 popupMenu.getMenuInflater().inflate(R.menu.menu_build, popupMenu.getMenu());
-
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         int id = item.getItemId();
+                        datagramSender.setAddr(global_string_address);
                         if(id == R.id.menu_item_armorStand) {
-
+                            datagramSender.setMessage("ba");
+                        } else if(id == R.id.menu_item_bed) {
+                            datagramSender.setMessage("bb");
+                        } else if(id == R.id.menu_item_seat) {
+                            datagramSender.setMessage("bc");
+                        } else if(id == R.id.menu_item_burial) {
+                            datagramSender.setMessage("bn");
+                        } else if(id == R.id.menu_item_door) {
+                            datagramSender.setMessage("bd");
+                        } else if(id == R.id.menu_item_floodgate) {
+                            datagramSender.setMessage("bx");
+                        } else if(id == R.id.menu_item_floorHatch) {
+                            datagramSender.setMessage("bH");
+                        } else if(id == R.id.menu_item_wallGrate) {
+                            datagramSender.setMessage("bW");
+                        } else if(id == R.id.menu_item_floorGrate) {
+                            datagramSender.setMessage("bG");
+                        } else if(id == R.id.menu_item_verticalBars) {
+                            datagramSender.setMessage("bB");
+                        } else if(id == R.id.menu_item_floorBars) {
+                            datagramSender.setMessage("b!Alt+b");
+                        } else if(id == R.id.menu_item_cabinet) {
+                            datagramSender.setMessage("bf");
+                        } else if(id == R.id.menu_item_container) {
+                            datagramSender.setMessage("bh");
+                        } else if(id == R.id.menu_item_kennels) {
+                            datagramSender.setMessage("bk");
+                        } else if(id == R.id.menu_item_farmPlot) {
+                            datagramSender.setMessage("bp");
+                        } else if(id == R.id.menu_item_weaponRack) {
+                            datagramSender.setMessage("br");
+                        } else if(id == R.id.menu_item_statue) {
+                            datagramSender.setMessage("bs");
+                        } else if(id == R.id.menu_item_slab) {
+                            datagramSender.setMessage("b!Alt+s");
+                        } else if(id == R.id.menu_item_table) {
+                            datagramSender.setMessage("bt");
+                        } else if(id == R.id.menu_item_pavedRoad) {
+                            datagramSender.setMessage("bo");
+                        } else if(id == R.id.menu_item_dirtRoad) {
+                            datagramSender.setMessage("bO");
+                        } else if(id == R.id.menu_item_bridge) {
+                            datagramSender.setMessage("bg");
+                        } else if(id == R.id.menu_item_well) {
+                            datagramSender.setMessage("bl");
+                        } else if(id == R.id.menu_item_glassWindow) {
+                            datagramSender.setMessage("by");
+                        }  else if(id == R.id.menu_item_gemWindow) {
+                            datagramSender.setMessage("bY");
+                        } else if(id == R.id.menu_item_wall) {
+                            datagramSender.setMessage("bC");
+                        } else if(id == R.id.menu_item_tradeDepot) {
+                            datagramSender.setMessage("bD");
+                        } else if(id == R.id.menu_item_instrument) {
+                            datagramSender.setMessage("bI");
+                        } else if(id == R.id.menu_item_support) {
+                            datagramSender.setMessage("bS");
+                        } else if(id == R.id.menu_item_animalTrap) {
+                            datagramSender.setMessage("bm");
+                        } else if(id == R.id.menu_item_restraint) {
+                            datagramSender.setMessage("bv");
+                        } else if(id == R.id.menu_item_cage) {
+                            datagramSender.setMessage("bj");
+                        } else if(id == R.id.menu_item_archeryTarget) {
+                            datagramSender.setMessage("bA");
+                        } else if(id == R.id.menu_item_tractionBench) {
+                            datagramSender.setMessage("bR");
+                        } else if(id == R.id.menu_item_nestBox) {
+                            datagramSender.setMessage("bN");
+                        } else if(id == R.id.menu_item_hive) {
+                            datagramSender.setMessage("b!Alt+h");
+                        } else if(id == R.id.menu_item_bookcase) {
+                            datagramSender.setMessage("b!Alt+c");
+                        } else if(id == R.id.menu_item_displayFurniture) {
+                            datagramSender.setMessage("bF");
                         }
-                        return false;
+                        //TODO: add furnace and workshop etc submenus
+
+                        datagramSender.sendData();
+                        popupMenu.dismiss();
+                        return true;
                     }
                 });
-
                 popupMenu.show();
             }
         });
     }
+
+    //========================================================
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
