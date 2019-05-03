@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_armorStand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Armor Stand (a)" />
+
+        <Button
+            android:id="@+id/menu_item_bed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Bed (b)" />
+
+        <Button
+            android:id="@+id/menu_item_seat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Seat (c)" />
+
+        <Button
+            android:id="@+id/menu_item_burial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Burial Receptacle (n)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_door"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Door (d)" />
+
+        <Button
+            android:id="@+id/menu_item_floodgate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Floodgate (x)" />
+
+        <Button
+            android:id="@+id/menu_item_floorHatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Floor Hatch (H)" />
+
+        <Button
+            android:id="@+id/menu_item_wallGrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Wall Grate (W)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_floorGrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Floor Grate (G)" />
+
+        <Button
+            android:id="@+id/menu_item_verticalBars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Vertical Bars (B)" />
+
+        <Button
+            android:id="@+id/menu_item_floorBars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Floor Bars (Alt+b)" />
+
+        <Button
+            android:id="@+id/menu_item_cabinet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Cabinet (f)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Container (h)" />
+
+        <Button
+            android:id="@+id/menu_item_kennels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Kennels (k)" />
+
+        <Button
+            android:id="@+id/menu_item_farmPlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Farm Plot (p)" />
+
+        <Button
+            android:id="@+id/menu_item_weaponRack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Weapon Rack (r)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_statue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Statue (s)" />
+
+        <Button
+            android:id="@+id/menu_item_slab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Slab (Alt+s)" />
+
+        <Button
+            android:id="@+id/menu_item_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Table (t)" />
+
+        <Button
+            android:id="@+id/menu_item_pavedRoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Paved Road (o)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_dirtRoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Dirt Road (O)" />
+
+        <Button
+            android:id="@+id/menu_item_bridge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Bridge (g)" />
+
+        <Button
+            android:id="@+id/menu_item_well"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Well (l)" />
+
+        <Button
+            android:id="@+id/menu_item_siegeEngines"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Siege Engines (i)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_workshops"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Workshops (w)" />
+
+        <Button
+            android:id="@+id/menu_item_furnaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Furnaces (e)" />
+
+        <Button
+            android:id="@+id/menu_item_glassWindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Glass Window (y)" />
+
+        <Button
+            android:id="@+id/menu_item_gemWindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Gem Window (Y)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_wall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Wall (C)" />
+
+        <Button
+            android:id="@+id/menu_item_tradeDepot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Trade Depot (D)" />
+
+        <Button
+            android:id="@+id/menu_item_traps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Traps (T)" />
+
+        <Button
+            android:id="@+id/menu_item_machineComponents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Machine Components (M)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_instrument"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Instrument (I)" />
+
+        <Button
+            android:id="@+id/menu_item_support"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Support (S)" />
+
+        <Button
+            android:id="@+id/menu_item_animalTrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Animal Trap (m)" />
+
+        <Button
+            android:id="@+id/menu_item_restraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Restraint (v)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_cage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Cage (j)" />
+
+        <Button
+            android:id="@+id/menu_item_archeryTarget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Archery Target (A)" />
+
+        <Button
+            android:id="@+id/menu_item_tractionBench"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Traction Bench (R)" />
+
+        <Button
+            android:id="@+id/menu_item_nestBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Nest Box (N)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_hive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Hive (Alt+h)" />
+
+        <Button
+            android:id="@+id/menu_item_bookcase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Bookcase (Alt+c)" />
+
+        <Button
+            android:id="@+id/menu_item_displayFurniture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Display Furniture (F)" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
