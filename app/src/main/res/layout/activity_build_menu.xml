@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,6 +18,7 @@
         android:orientation="horizontal">
 
         <Button
+
             android:id="@+id/menu_item_armorStand"
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_weight="1"
@@ -29,12 +36,6 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Seat (c)" />
 
-        <Button
-            android:id="@+id/menu_item_burial"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Burial Receptacle (n)" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -42,6 +43,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_burial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Burial Receptacle (n)" />
 
         <Button
             android:id="@+id/menu_item_door"
@@ -55,17 +63,33 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Floodgate (x)" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/menu_item_floorHatch"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Floor Hatch (H)" />
 
         <Button
             android:id="@+id/menu_item_wallGrate"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Wall Grate (W)" />
+
+        <Button
+            android:id="@+id/menu_item_floorGrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Floor Grate (G)" />
 
     </LinearLayout>
 
@@ -76,27 +100,24 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/menu_item_floorGrate"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Floor Grate (G)" />
-
-        <Button
             android:id="@+id/menu_item_verticalBars"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Vertical Bars (B)" />
 
         <Button
             android:id="@+id/menu_item_floorBars"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Floor Bars (Alt+b)" />
 
         <Button
             android:id="@+id/menu_item_cabinet"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Cabinet (f)" />
 
     </LinearLayout>
@@ -110,26 +131,23 @@
         <Button
             android:id="@+id/menu_item_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Container (h)" />
 
         <Button
             android:id="@+id/menu_item_kennels"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Kennels (k)" />
 
         <Button
             android:id="@+id/menu_item_farmPlot"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="Farm Plot (p)" />
-
-        <Button
-            android:id="@+id/menu_item_weaponRack"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Weapon Rack (r)" />
 
     </LinearLayout>
 
@@ -138,6 +156,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_weaponRack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Weapon Rack (r)" />
 
         <Button
             android:id="@+id/menu_item_statue"
@@ -151,6 +176,14 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Slab (Alt+s)" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/menu_item_table"
             android:layout_width="match_parent"
@@ -163,6 +196,12 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Paved Road (o)" />
 
+        <Button
+            android:id="@+id/menu_item_dirtRoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Dirt Road (O)" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -170,12 +209,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/menu_item_dirtRoad"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Dirt Road (O)" />
 
         <Button
             android:id="@+id/menu_item_bridge"
@@ -194,6 +227,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Siege Engines (i)" />
+
 
     </LinearLayout>
 
@@ -221,12 +255,6 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Glass Window (y)" />
 
-        <Button
-            android:id="@+id/menu_item_gemWindow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Gem Window (Y)" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -234,6 +262,12 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_item_gemWindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Gem Window (Y)" />
 
         <Button
             android:id="@+id/menu_item_wall"
@@ -247,6 +281,14 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Trade Depot (D)" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/menu_item_traps"
             android:layout_width="match_parent"
@@ -259,6 +301,11 @@
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Machine Components (M)" />
 
+        <Button
+            android:id="@+id/menu_item_instrument"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:text="Instrument (I)" />
     </LinearLayout>
 
     <LinearLayout
@@ -266,12 +313,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/menu_item_instrument"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Instrument (I)" />
 
         <Button
             android:id="@+id/menu_item_support"
@@ -312,16 +353,10 @@
             android:text="Archery Target (A)" />
 
         <Button
-            android:id="@+id/menu_item_tractionBench"
+            android:id="@+id/menu_item_bookcase"
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Traction Bench (R)" />
-
-        <Button
-            android:id="@+id/menu_item_nestBox"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Nest Box (N)" />
+            android:text="Bookcase (Alt+c)" />
 
     </LinearLayout>
 
@@ -332,24 +367,12 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/menu_item_hive"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Hive (Alt+h)" />
-
-        <Button
-            android:id="@+id/menu_item_bookcase"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1"
-            android:text="Bookcase (Alt+c)" />
-
-        <Button
             android:id="@+id/menu_item_displayFurniture"
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:layout_weight="1"
             android:text="Display Furniture (F)" />
 
     </LinearLayout>
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

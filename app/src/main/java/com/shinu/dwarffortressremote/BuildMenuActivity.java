@@ -15,7 +15,7 @@ public class BuildMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_build_menu);
-        
+
     }
 
     public void resultMethod() {
