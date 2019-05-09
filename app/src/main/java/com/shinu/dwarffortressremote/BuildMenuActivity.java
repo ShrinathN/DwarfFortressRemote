@@ -67,7 +67,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_armorStand.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "a";
+                msg = "ba";
                 resultMethod();
             }
         });
@@ -75,7 +75,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_bed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "b";
+                msg = "bb";
                 resultMethod();
             }
         });
@@ -83,7 +83,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_seat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "c";
+                msg = "bc";
                 resultMethod();
             }
         });
@@ -91,7 +91,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_burial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "n";
+                msg = "bn";
                 resultMethod();
             }
         });
@@ -99,7 +99,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_door.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "d";
+                msg = "bd";
                 resultMethod();
             }
         });
@@ -107,7 +107,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_floodgate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "x";
+                msg = "bx";
                 resultMethod();
             }
         });
@@ -115,7 +115,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_floorHatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "H";
+                msg = "bH";
                 resultMethod();
             }
         });
@@ -123,7 +123,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_wallGrate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "W";
+                msg = "bW";
                 resultMethod();
             }
         });
@@ -131,7 +131,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_floorGrate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "G";
+                msg = "bG";
                 resultMethod();
             }
         });
@@ -139,7 +139,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_verticalBars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "B";
+                msg = "bB";
                 resultMethod();
             }
         });
@@ -147,7 +147,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_floorBars.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "!Alt+b";
+                msg = "b!Alt+b";
                 resultMethod();
             }
         });
@@ -155,7 +155,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_cabinet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "f";
+                msg = "bf";
                 resultMethod();
             }
         });
@@ -163,7 +163,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "h";
+                msg = "bh";
                 resultMethod();
             }
         });
@@ -171,7 +171,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_kennels.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "k";
+                msg = "bk";
                 resultMethod();
             }
         });
@@ -179,7 +179,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_farmPlot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "p";
+                msg = "bp";
                 resultMethod();
             }
         });
@@ -187,7 +187,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_weaponRack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "r";
+                msg = "br";
                 resultMethod();
             }
         });
@@ -195,7 +195,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_statue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "s";
+                msg = "bs";
                 resultMethod();
             }
         });
@@ -203,7 +203,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_slab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "!Alt+s";
+                msg = "b!Alt+s";
                 resultMethod();
             }
         });
@@ -211,7 +211,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_table.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "t";
+                msg = "bt";
                 resultMethod();
             }
         });
@@ -219,7 +219,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_pavedRoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "o";
+                msg = "bo";
                 resultMethod();
             }
         });
@@ -227,7 +227,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_dirtRoad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "O";
+                msg = "bO";
                 resultMethod();
             }
         });
@@ -235,7 +235,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_bridge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "g";
+                msg = "bg";
                 resultMethod();
             }
         });
@@ -243,7 +243,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_well.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "l";
+                msg = "bl";
                 resultMethod();
             }
         });
@@ -257,7 +257,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_workshops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "w";
+                msg = "bw";
                 resultMethod();
             }
         });
@@ -271,7 +271,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_glassWindow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "y";
+                msg = "by";
                 resultMethod();
             }
         });
@@ -279,7 +279,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_gemWindow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "Y";
+                msg = "bY";
                 resultMethod();
             }
         });
@@ -293,7 +293,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_tradeDepot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "D";
+                msg = "bD";
                 resultMethod();
             }
         });
@@ -314,7 +314,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_instrument.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "I";
+                msg = "bI";
                 resultMethod();
             }
         });
@@ -322,7 +322,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "S";
+                msg = "bS";
                 resultMethod();
             }
         });
@@ -330,7 +330,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_animalTrap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "m";
+                msg = "bm";
                 resultMethod();
             }
         });
@@ -338,7 +338,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_restraint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "v";
+                msg = "bv";
                 resultMethod();
             }
         });
@@ -346,7 +346,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_cage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "j";
+                msg = "bj";
                 resultMethod();
             }
         });
@@ -354,7 +354,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_archeryTarget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "A";
+                msg = "bA";
                 resultMethod();
             }
         });
@@ -362,7 +362,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_tractionBench.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "R";
+                msg = "bR";
                 resultMethod();
             }
         });
@@ -370,7 +370,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_nestBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "N";
+                msg = "bN";
                 resultMethod();
             }
         });
@@ -378,7 +378,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_hive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "!Alt+h";
+                msg = "b!Alt+h";
                 resultMethod();
             }
         });
@@ -386,7 +386,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_bookcase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "!Alt+c";
+                msg = "b!Alt+c";
                 resultMethod();
             }
         });
@@ -394,7 +394,7 @@ public class BuildMenuActivity extends AppCompatActivity {
         button_build_displayFurniture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msg = "F";
+                msg = "bF";
                 resultMethod();
             }
         });
